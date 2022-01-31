@@ -17,10 +17,10 @@ from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from . import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lynx User"
 
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "LEGENDARY AF MAFIABOT"
-BOTLOG_CHATID = Config.MAFIABOT_LOGGER
+DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "LEGENDARY AF LynxBot"
+BOTLOG_CHATID = Config.LYNXBOT_LOGGER
 BOTLOG = True
 
 
