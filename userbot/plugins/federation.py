@@ -258,7 +258,7 @@ async def get_users(show):
 @bot.on(admin_cmd(pattern="bgban ?(.*)"))
 @bot.on(sudo_cmd(pattern="bgban ?(.*)", allow_sudo=True))
 async def _(event):
-    if MAFIABOT_LOGGER is None:
+    if LYNXBOT_LOGGER is None:
         await event.edit("ENV VAR is not set. This module will not work.")
         return
     if event.fwd_from:
@@ -271,7 +271,7 @@ async def _(event):
         else:
             r_sender_id = r.sender_id
         await event.client.send_message(
-            MAFIABOT_LOGGER,
+            LYNXBOT_LOGGER,
             "/gban [user](tg://user?id={}) {}".format(r_sender_id, reason),
         )
     await event.delete()
