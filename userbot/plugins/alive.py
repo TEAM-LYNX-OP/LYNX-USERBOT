@@ -12,7 +12,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from . import *
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝕄𝔸𝔽𝕀𝔸𝔹𝕆𝕋"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℒ𝒴𝒩𝒳 ℬ𝒪𝒯"
 
 ludosudo = Config.SUDO_USERS
 
@@ -23,8 +23,8 @@ else:
 
 mafia = bot.uid
 
-MAFIA_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/e97d640332ce5eadb3f89.mp4"
-pm_caption = "  __**🔥🔥𝐌𝐀𝐅𝐈𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄🔥🔥**__\n\n"
+MAFIA_IMG = Config.ALIVE_PIC or "https://te.legra.ph/file/05db5b237fb0a98d577bc.jpg"
+pm_caption = "  __**🔥🔥𝓛𝓨𝓝𝓧 𝓑𝓞𝓣 𝓘𝓢 𝓐𝓛𝓘𝓥𝓔🔥🔥**__\n\n"
 
 pm_caption += f"**━━━━━━━━━━━━━━━━━━━━**\n\n"
 pm_caption += (
@@ -34,10 +34,11 @@ pm_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
 pm_caption += f"┣•➳➠ `Telethon:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `Version:` `{mafiaversion}`\n"
 pm_caption += f"┣•➳➠ `Sudo:` `{sudou}`\n"
-pm_caption += f"┣•➳➠ `Channel:` [ᴊᴏɪɴ](https://t.me/MafiaBot_Support)\n"
-pm_caption += f"┣•➳➠ `Creator:` [Himanshu](https://t.me/H1M4N5HU0P)\n"
+pm_caption += f"┣•➳➠ `Channel:` [𝙻𝚢𝚗𝚡 𝚄𝚙𝚍𝚊𝚝𝚎𝚜](https://t.me/Lynx_Updates)\n"
+pm_caption += f"┣•➳➠ `Creator:` [𝗠𝗼𝗿𝗮𝗹𝗕𝗼𝘆](https://t.me/H1M4N5HU0P)\n"
+pm_caption += f"┣•➳➠ `Group:` [Լყɳχẞσ𝜏 Sᥙρρσɾ𝜏](https://t.me/LynxBot_support)\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
-pm_caption += " [🔥REPO🔥](https://github.com/MafiaBotOP/MafiaBot) 🔹 [📜License📜](https://github.com/MafiaBotOP/MafiaBot/blob/main/LICENSE)"
+pm_caption += " [🔥REPO🔥](https://github.com/TEAM-LYNX-OP/LYNX-USERBOT) 🔹 [📜License📜](https://github.com/TEAM-LYNX-OP/LYNX-USERBOT/blob/main/LICENSE)"
 
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
