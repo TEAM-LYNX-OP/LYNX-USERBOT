@@ -12,7 +12,7 @@ from userbot.Config import Config
 from . import *
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lynx User"
 mafia = borg.uid
 
 PICS_STR = []
@@ -66,7 +66,7 @@ async def _(mafiaevent):
     await bot.send_file(
         mafiaevent.chat_id,
         file_name,
-        caption=f"**мα∂ε вү  :** 『[{DEFAULTUSER}](tg://user?id={mafia})』\n\n",
+        caption=f"**мα∂ε вү  :** 『[LynxBot](https://t.me/LynxBot_Support)』\n\n",
     )
     await event.delete()
     try:
