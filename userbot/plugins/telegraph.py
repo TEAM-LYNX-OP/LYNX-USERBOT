@@ -14,7 +14,7 @@ from userbot.cmdhelp import CmdHelp
 MAFIA_NAME = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
 h1m4n5hu0p = bot.uid
 mafia_mention = "[{MAFIA_NAME}](tg://user?id={h1m4n5hu0p})"
-lg_id = Config.MAFIABOT_LOGGER
+lg_id = Config.LYNXBOT_LOGGER
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)
@@ -26,8 +26,8 @@ auth_url = r["auth_url"]
 async def _(event):
     if event.fwd_from:
         return
-    if Config.MAFIABOT_LOGGER is None:
-        await edit_or_reply(event, "You need to setup `MAFIABOT_LOGGER` to use telegraph...", 7)
+    if Config.LYNXBOT_LOGGER is None:
+        await edit_or_reply(event, "You need to setup `LYNXBOT_LOGGER` to use telegraph...", 7)
         return
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
