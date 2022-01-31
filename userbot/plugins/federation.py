@@ -15,18 +15,18 @@ from . import *
 
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LYNX User"
 
 mafia = bot.uid
 
 
 bots = "@MissRose_bot"
 
-BOTLOG_CHATID = Config.MAFIABOT_LOGGER
+BOTLOG_CHATID = Config.LYNXBOT_LOGGER
 
-MAFIABOT_LOGGER = os.environ.get("MAFIABOT_LOGGER", None)
-if MAFIABOT_LOGGER:
-    MAFIABOT_LOGGER = int(MAFIABOT_LOGGER)
+LYNXBOT_LOGGER = os.environ.get("LYNXBOT_LOGGER", None)
+if LYNXBOT_LOGGER:
+    LYNXBOT_LOGGER = int(LYNXBOT_LOGGER)
 
 
 @bot.on(admin_cmd("fstat ?(.*)"))
