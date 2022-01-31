@@ -27,14 +27,14 @@ LYNXBOT_LOGGER = Config.LYNXBOT_LOGGER
 @bot.on(admin_cmd(pattern=r"save(?: |$)([\s\S]*)", outgoing=True))
 async def log(log_text):
     """ For .log command, forwards a message or the command argument to the bot logs group """
-    if MAFIABOT_LOGGER:
+    if LYNXBOT_LOGGER:
         if log_text.reply_to_msg_id:
             reply_msg = await log_text.get_reply_message()
-            await reply_msg.forward_to(MAFIABOT_LOGGER)
+            await reply_msg.forward_to(LYNXBOT_LOGGER)
         elif log_text.pattern_match.group(1):
             user = f"#LOG / Chat ID: {log_text.chat_id}\n\n"
             textx = user + log_text.pattern_match.group(1)
-            await bot.send_message(MAFIABOT_LOGGER, textx)
+            await bot.send_message(LYNXBOT_LOGGER, textx)
         else:
             await log_text.edit("`What am I supposed to save?`")
             return
@@ -52,7 +52,7 @@ async def monito_p_m_s(event):
         chat = await event.get_chat()
         if chat.id not in NO_PM_LOG_USERS and chat.id != bot.uid:
             try:
-                e = await bot.get_entity(int(Config.MAFIABOT_LOGGER))
+                e = await bot.get_entity(int(Config.LYNXBOT_LOGGER))
                 fwd_message = await bot.forward_messages(e, event.message, silent=True)
             except Exception as e:
                 # logger.warn(str(e))
@@ -64,7 +64,7 @@ async def monito_p_m_s(event):
 
 @bot.on(admin_cmd(pattern="elog ?(.*)"))
 async def set_no_log_p_m(event):
-    if Config.MAFIABOT_LOGGER is not None:
+    if Config.LYNXBOT_LOGGER is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
@@ -77,7 +77,7 @@ async def set_no_log_p_m(event):
 
 @bot.on(admin_cmd(pattern="nlog ?(.*)"))
 async def set_no_log_p_m(event):
-    if Config.MAFIABOT_LOGGER is not None:
+    if Config.LYNXBOT_LOGGER is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
