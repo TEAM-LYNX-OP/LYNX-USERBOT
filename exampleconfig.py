@@ -30,7 +30,7 @@ class Development(Config):
   # and type /id and paste that id here.
   # replace that -100 with that group id.
   PRIVATE_GROUP_BOT_API_ID = -100
-          MAFIABOT_LOGGER = -1001174481876
+          LYNXBOT_LOGGER = -1001174481876
   # Custom Command Handler. 
   COMMAND_HAND_LER = "."
 
