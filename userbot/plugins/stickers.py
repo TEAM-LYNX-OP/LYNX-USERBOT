@@ -139,7 +139,7 @@ async def kang(args):
                     packnick = (
                         f"{mafiabot} Vol.{pack}"
                         if mafiabot
-                        else f"@{user.username}'s MafiaBot Vol.{pack}"
+                        else f"@{user.username}'s LynxBot Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
