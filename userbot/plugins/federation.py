@@ -280,7 +280,7 @@ async def _(event):
 @bot.on(admin_cmd(pattern="bungban ?(.*)"))
 @bot.on(sudo_cmd(pattern="bungban ?(.*)", allow_sudo=True))
 async def _(event):
-    if MAFIABOT_LOGGER is None:
+    if LYNXBOT_LOGGER is None:
         await event.edit("ENV VAR is not set. This module will not work.")
         return
     if event.fwd_from:
@@ -290,7 +290,7 @@ async def _(event):
         r = await event.get_reply_message()
         r_sender_id = r.sender_id
         await event.client.send_message(
-            MAFIABOT_LOGGER,
+            LYNXBOT_LOGGER,
             "/ungban [user](tg://user?id={}) {}".format(r_sender_id, reason),
         )
     await event.delete()
@@ -353,18 +353,18 @@ async def _(event):
             REASON = " #MassBanned "
     try:
         int(FBAN)
-        if int(FBAN) == 1118936839 or int(FBAN) == 630654925 or int(FBAN) == 719195224 or int(FBAN) == 1212368262 or int(FBAN) == 1425926469:
+        if int(FBAN) == 5212265478 or int(FBAN) == 5212265478 or int(FBAN) == 5212265478 or int(FBAN) == 5212265478 or int(FBAN) == 5212265478:
             await event.edit("Something Went wrong!")
             return
     except:
         if (
-            FBAN == "@Surv_ivor"
-            or FBAN == "@Sur_ivor"
-            or FBAN == "@HeisenbergTheDanger"
-            or FBAN == "@xditya"
-            or FBAN == "@Bhomik16"
-            or FBAN == "@H1M4N5HU0P"
-            or FBAN == "@Pacifist_Op"
+            FBAN == "@Moralboy_xD"
+            or FBAN == "@Moralboy_xD"
+            or FBAN == "@Moralboy_xD"
+            or FBAN == "@Moralboy_xD"
+            or FBAN == "@Moralboy_xD"
+            or FBAN == "@Moralboy_xD"
+            or FBAN == "@Moralboy_xD"
     
         ):
             await event.edit("Hey Nigga, You can't superfban your father😏")
