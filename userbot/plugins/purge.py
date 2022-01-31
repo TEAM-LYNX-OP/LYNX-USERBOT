@@ -40,9 +40,9 @@ async def fastpurger(purg):
         "`Fast purge complete!\n`Purged " + str(count) + " messages.",
     )
 
-    if MAFIABOT_LOGGER:
+    if LYNXBOT_LOGGER:
         await purg.client.send_message(
-            MAFIABOT_LOGGER, "Purge of " + str(count) + " messages done successfully."
+            LYNXBOT_LOGGER, "Purge of " + str(count) + " messages done successfully."
         )
     await sleep(2)
     await done.delete()
@@ -68,9 +68,9 @@ async def purgeme(delme):
         delme.chat_id,
         "`Purge complete!` Purged " + str(count) + " messages.",
     )
-    if MAFIABOT_LOGGER:
+    if LYNXBOT_LOGGER:
         await delme.client.send_message(
-            MAFIABOT_LOGGER, "Purge of " + str(count) + " messages done successfully."
+            LYNXBOT_LOGGER, "Purge of " + str(count) + " messages done successfully."
         )
     await sleep(2)
     i = 1
@@ -89,5 +89,5 @@ async def selfdestruct(destroy):
     smsg = await destroy.client.send_message(destroy.chat_id, text)
     await sleep(counter)
     await smsg.delete()
-    if MAFIABOT_LOGGER:
-        await destroy.client.send_message(MAFIABOT_LOGGER, "sd query done successfully")
+    if LYNXBOT_LOGGER:
+        await destroy.client.send_message(LYNXBOT_LOGGER, "sd query done successfully")
