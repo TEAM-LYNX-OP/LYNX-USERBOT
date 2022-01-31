@@ -116,9 +116,9 @@ async def rm_deletedacc(show):
         del_status = f"Cleaned **{del_u}** deleted account(s) \
         \n**{del_a}** deleted admin accounts are not removed"
     await edit_or_reply(event, del_status)
-    if MAFIABOT_LOGGER:
+    if LYNXBOT_LOGGER:
         await show.client.send_message(
-            MAFIABOT_LOGGER,
+            LYNXBOT_LOGGER,
             f"#CLEANUP\
             \n{del_status}\
             \nCHAT: {show.chat.title}(`{show.chat_id}`)",
