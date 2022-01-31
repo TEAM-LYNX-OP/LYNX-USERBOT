@@ -57,9 +57,9 @@ import userbot._core
 print(f"""LynxBot IS ON!!! LynxBot VERSION :- {mafiaversion} YOUR 𝑳𝒀𝑵𝑿 𝑩𝑶𝑻 IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @LynxBot_Support .""")
 async def mafia_is_on():
     try:
-        if Config.MAFIABOT_LOGGER != 0:
+        if Config.LYNXBOT_LOGGER != 0:
             await bot.send_file(
-                Config.MAFIABOT_LOGGER,
+                Config.LYNXBOT_LOGGER,
                 Lynx_pic,
                 caption=f"༆𝓛Ⲉ𝓖ⲈⲚⲆⲀꞄⲨ Ⲁ𝓕 𝓛ⲨⲚⲬ ⲂⲞⲦ༆\n\n**𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ➪ {mafiaversion}**\n\n𝐓𝐲𝐩𝐞 `.ping` or `.alive` 𝐭𝐨 𝐜𝐡𝐞𝐜𝐤! \n\n𝙹𝙾𝙸𝙽 [lynxBot 𝙲𝙷𝙰𝚃](t.me/LynxBot_Support) 𝚃𝙾 𝚀𝚄𝙴𝚁𝚈 & 𝙹𝙾𝙸𝙽 [LYNX 𝚄𝙿𝙳𝙰𝚃𝙴𝚂](t.me/lynx_updates) 𝚃𝙾 𝙺𝙽𝙾𝚆 𝚁𝙴𝙶𝚁𝙰𝙳𝙸𝙽𝙶 𝚄𝙿𝙳𝙰𝚃𝙴 𝙰𝙽𝙳 𝙽𝙴𝚆𝚂 𝙰𝙱𝙾𝚄𝚃 LynxBot",
             )
