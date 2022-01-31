@@ -27,7 +27,7 @@ async def pasty(message, extension=None):
         )
         try:
             await bot.send_message(
-                Config.MAFIABOT_LOGGER,
+                Config.LYNXBOT_LOGGER,
                 f"#PASTE \n\n**Open Paste From** [here]({purl}). \n**Delete that paste by using this token** `{response['deletionToken']}`",
             )
         except Exception as e:
@@ -42,12 +42,12 @@ async def pasty(message, extension=None):
 
 async def telegraph_paste(page_title, temxt):
     cl1ent = TelegraphPoster(use_api=True)
-    auth = "[ LEGENDARY AF MAFIABOT ]"
+    auth = "[ LEGENDARY AF LYNX BOT ]"
     cl1ent.create_api_token(auth)
     post_page = cl1ent.post(
         title=page_title,
         author=auth,
-        author_url="https://t.me/MafiaBot_Support",
+        author_url="https://t.me/LYNXBOT_SUPPORT",
         text=temxt,
     )
     return post_page["url"]
