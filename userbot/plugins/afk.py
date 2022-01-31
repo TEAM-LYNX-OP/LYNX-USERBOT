@@ -12,7 +12,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from . import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lynx User"
 
 mafia = bot.uid
 
@@ -51,7 +51,7 @@ async def set_not_afk(event):
         )
         try:
             await bot.send_message(  # pylint:disable=E0602
-                Config.MAFIABOT_LOGGER,  # pylint:disable=E0602
+                Config.LYNXBOT_LOGGER,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\n"
                 + "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
                 + total_afk_time
@@ -59,7 +59,7 @@ async def set_not_afk(event):
         except Exception as e:  # pylint:disable=C0103,W0703
             await bot.send_message(  # pylint:disable=E0602
                 event.chat_id,
-                "Please set `MAFIABOT_LOGGER` "
+                "Please set `LYNXBOT_LOGGER` "
                 + "for the proper functioning of afk functionality "
                 + "Ask in @MafiaBot_Chit_Chat to get help setting this value\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
@@ -146,7 +146,7 @@ async def _(event):
         await event.delete()
         try:
             await bot.send_message(  # pylint:disable=E0602
-                Config.MAFIABOT_LOGGER,  # pylint:disable=E0602
+                Config.LYNXBOT_LOGGER,  # pylint:disable=E0602
                 f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",file=mafiapic
             )
         except Exception as e:  # pylint:disable=C0103,W0703
