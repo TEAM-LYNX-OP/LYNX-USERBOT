@@ -8,7 +8,7 @@ from userbot.Config import Config
 from . import *
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lynx User"
 h1m4n5hu0p = borg.uid
 MAFIA_IMG = Config.ALIVE_PIC
 
