@@ -39,7 +39,7 @@ USER_BOT_NO_WARN = (
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
-if Var.MAFIABOT_LOGGER is not None:
+if Var.LYNXBOT_LOGGER is not None:
 
     @bot.on(admin_cmd(pattern="a|.allow|.approve ?(.*)"))
     async def approve_p_m(event):
@@ -217,7 +217,7 @@ if Var.MAFIABOT_LOGGER is not None:
         if event.sender_id == bot.uid:
             return
 
-        if Var.MAFIABOT_LOGGER is None:
+        if Var.LYNXBOT_LOGGER is None:
             return
 
         if not event.is_private:
@@ -275,7 +275,7 @@ if Var.MAFIABOT_LOGGER is not None:
             # the_message += f"Media: {message_media}"
             try:
                 await event.client.send_message(
-                    entity=Var.MAFIABOT_LOGGER,
+                    entity=Var.LYNXBOT_LOGGER,
                     message=the_message,
                     # reply_to=,
                     # parse_mode="html",
