@@ -11,7 +11,7 @@ from userbot import *
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 
-LOGGER = Config.MAFIABOT_LOGGER
+LOGGER = Config.LYNXBOT_LOGGER
 
 @bot.on(admin_cmd(pattern="exec(?: |$|\n)(.*)", command="exec"))
 @bot.on(sudo_cmd(pattern="exec(?: |$|\n)(.*)", command="exec", allow_sudo=True))
