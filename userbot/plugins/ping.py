@@ -67,11 +67,11 @@ async def _(event):
     if event.fwd_from:
         return
     start = datetime.datetime.now()
-    event = await edit_or_reply(event, "__**(❛ ᑭσɳց ❜!__**")
+    event = await edit_or_reply(event, "__**(❛ ᑭiɳց ❜!__**")
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     if MAFIA_IMG:
-        mafia_caption = f"__**〘 ʂ℘ɛɛɖ 〙__**\n\n   ⚘ {ms}\n   ⚘ __**𝙼𝚢**__ __**𝙼𝚊𝚜𝚝𝚎𝚛**__⟿[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
+        mafia_caption = f"__**(❛ ᑭσɳց ❜!____**\n\n   ⚘ {ms}\n   ⚘ __**𝙼𝚢**__ __**𝙼𝚊𝚜𝚝𝚎𝚛**__⟿[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
         await event.client.send_file(
             event.chat_id, MAFIA_IMG, caption=mafia_caption
         )
