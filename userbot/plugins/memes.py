@@ -623,7 +623,7 @@ async def vapor(vpr):
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "Click [here](https://github.com/TEAM-LYNX-OP/LYNX-USERBOT) to open this 🔥**Lit AF!!**🔥 __LynxBot__ Repo.. Join Group :- @LynxBot_support")
+        await edit_or_reply(e, "Click [here](https://github.com/TEAM-LYNX-OP/LYNX-BOT) to open this 🔥**Lit AF!!**🔥 __LynxBot__ Repo.. Join Group :- @LynxBot_support")
 
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
