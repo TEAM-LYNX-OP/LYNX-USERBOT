@@ -11,6 +11,7 @@ from userbot import LOAD_PLUG, LOGS, mafiaversion
 from pathlib import Path
 import asyncio
 import telethon.utils
+from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 
 Lynx_pic = Config.ALIVE_PIC or "https://te.legra.ph/file/05db5b237fb0a98d577bc.jpg"
 
@@ -66,8 +67,20 @@ async def mafia_is_on():
     except Exception as e:
         LOGS.info(str(e))
 
+    try:
+        await bot(JoinChannelRequest("@LynxBot_support"))
+    except BaseException:
+        pass
+
+    try:
+        await bot(JoinChannelRequest("@Lynx_updates"))
+    except BaseException:
+         pass
+
+
 bot.loop.create_task(mafia_is_on())
-if len(argv) not in (1, 3, 4):
+
+if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.run_until_disconnected()
