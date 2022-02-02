@@ -24,7 +24,7 @@ else:
 mafia = bot.uid
 
 MAFIA_IMG = Config.ALIVE_PIC or "https://te.legra.ph/file/05db5b237fb0a98d577bc.jpg"
-pm_caption = "  __**🔥🔥ℓуηχ вσт ιѕ αℓινє🔥🔥**__\n\n"
+pm_caption = "  __**🔥🔥𝑳𝒚𝒏𝒙 𝑩𝒐𝒕 𝑰𝒔 𝑨𝒍𝒊𝒗𝒆🔥🔥**__\n\n"
 pm_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
 pm_caption += f"┣•➳➠ `тєℓєтнση:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `νєяѕιση:` `{mafiaversion}`\n"
